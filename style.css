@@ -1,0 +1,150 @@
+:root {
+  --dark-gray: #222831;
+  --white: #eeeeee;
+  --yellow: #ffd369;
+  --light-gray: #d3d3d3;
+  --red: #ff0000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--dark-gray);
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  background-color: var(--yellow);
+  color: var(--dark-gray);
+  align-items: center;
+  padding: 0px 10px;
+  margin-bottom: 10px;
+}
+
+.navbar-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.codes-container {
+  width: 450px;
+  height: auto;
+}
+
+.codes {
+  display: flex;
+  flex-direction: column;
+}
+
+.codes-container .addCode {
+  display: flex;
+  justify-content: right;
+}
+
+.codes-container .addCode button {
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.codes-container .addCode .add-button {
+  background-color: var(--red);
+  color: var(--white);
+  border-radius: 100%;
+  margin-right: 20px;
+}
+
+.codes-container .addCode .get-codes {
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.codes-container .addCode .clear-codes {
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+  border-radius: 10px;
+}
+
+.code-card {
+  border-radius: 10px;
+  margin: 10px;
+  height: 80px;
+  width: 300px;
+  background-color: var(--light-gray);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.code-card button {
+  background-color: transparent;
+  color: var(--dark-gray);
+
+  border: none;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.code-card button i {
+  font-size: 20px;
+}
+
+.popupForm {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 70px;
+  transform: translate(-50%, -50%);
+  background-color: var(--yellow);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.popupForm input {
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  height: 30px;
+  background-color: rgba(238, 238, 238, 0.3);
+  padding-left: 15px;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 500;
+  width: 100px;
+}
+
+.popupForm .form .description-input {
+  height: 120px;
+}
+
+.popupForm button {
+  margin: 10px 0;
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--dark-gray);
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}

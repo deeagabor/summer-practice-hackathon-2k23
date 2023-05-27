@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Authenticator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/09c942d75c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav id="navbar" class="navbar">
+      <h3 id="navbar-text" class="navbar-text">Authenticator</h3>
+    </nav>
+
+    <div id="popupForm" class="popupForm">
+      <form id="form" class="form">
+        <div class="labelInput">
+          <label>Code name:</label>
+          <input type="text" name="name" id="name-input" />
+          <br />
+        </div>
+        <button type="submit">Add Code</button>
+      </form>
+    </div>
+
+    <div id="codes-container" class="codes-container">
+      <div id="codes" class="codes"></div>
+      <div id="addCode" class="addCode">
+        <button class="add-button" onclick="showPopup()">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <button class="get-codes" onclick="getCodesFetch()">
+          <i class="fa-solid fa-list"></i>
+        </button>
+        <button class="clear-codes" onclick="clearCodes()">
+          <i class="fa-solid fa-trash"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
