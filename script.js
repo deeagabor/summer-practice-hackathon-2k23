@@ -50,7 +50,7 @@ function reload(codeText) {
   setInterval(() => {
     let newCode = generateRandomNumber();
     codeText.textContent = newCode;
-  }, 5000);
+  }, 30000);
 }
 
 // Add a MFA name-code pair and Save to Local Storage
